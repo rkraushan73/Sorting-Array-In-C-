@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespace   std;
+
+void show(int a[], int array_size){
+    for(int i=0; i<array_size; i++){
+        std::cout << a[i] << " " << std::endl;
+    }
+}
+int main()
+{   int a[] = {1,2,43,76,90,0,23,56};
+    int asize = sizeof(a)/sizeof(a[0]);
+    cout<< "Before sorting the array was";
+    show(a, asize);
+    sort(a, a+asize);
+    cout << "After sorting the array becomes";
+    show(a, asize);
+    
+
+    return 0;
+}
