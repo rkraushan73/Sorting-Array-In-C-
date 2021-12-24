@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace   std;
+
+void show(int a[], int array_size){
+    for(int i=0; i<array_size; i++){
+        std::cout << a[i] << " " << std::endl;
+    }
+}
+int main()
+{   int a[] = {1,2,43,76,90,0,23,56, 765, 111};
+    int asize = sizeof(a)/sizeof(a[0]);
+    cout<< "Before sorting the array was\n";
+    show(a, asize);
+    sort(a, a+asize);
+    cout << "After sorting the array becomes\n";
+    show(a, asize);
+    cout << "\n\nNow, we do the binary search\n";
+    
+    if(binary_search(a, a+10, 200000))
+    cout<< "Element found in the array\n";
+    else
+    cout<< "\nElemenyt not found in the array";
+    
+    
+    
+    
+    
+    
+
+    return 0;
+}
